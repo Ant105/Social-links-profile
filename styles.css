@@ -1,7 +1,13 @@
 
-body {
-  line-height: 150%;
-  letter-spacing: 0;
+/*Mobile First*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
 }
 
 :root {
@@ -10,6 +16,13 @@ body {
   --Gray-700: #333;
   --Green: #C4F82A;
   --White: #FFF;
+}
+
+body {
+  line-height: 150%;
+  letter-spacing: 0;
+  padding-bottom: 700px;
+  background-color: var(--Gray-900);
 }
 
 * {
@@ -21,16 +34,19 @@ body {
 @font-face {
   font-family: Inter-Regular;
   src: url('/assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
 }
 
 @font-face {
   font-family: Inter-SemiBold;
   src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
 }
 
 @font-face {
   font-family: Inter-Bold;
   src: url('/assets/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
 }
 
 .main-container {
@@ -46,6 +62,7 @@ body {
   background-color: var(--Gray-800);
   padding: 24px;
   border-radius: 12px;
+  margin-top: 5px;
 }
 
 img {
@@ -57,21 +74,21 @@ img {
 }
 
 .name {
-  font-family: Inter-Bold;
+  font-family: Inter-SemiBold, sans-serif;
   font-size: 24px;
   color: var(--White);
   margin-top: 30px;
 }
 
 .location {
-  font-family: Inter-Bold;
+  font-family: Inter-Bold, sans-serif;
   color: var(--Green);
   font-size: 14px;
   margin-top: 8px;
 }
 
 .skills {
-  font-family: Inter-Regular;
+  font-family: Inter-Regular, sans-serif;
   color: var(--White);
   font-size: 14px;
   margin-top: 21px;
@@ -82,7 +99,7 @@ ul {
   list-style: none;
 }
 
-a {
+a:not(.attribution a) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,8 +108,32 @@ a {
   background-color: var(--Gray-700);
   border-radius: 8px;
   text-decoration: none;
-  font-family: Inter-Bold;
+  font-family: Inter-Bold, sans-serif;
   color: var(--White);
   font-size: 14px;
   margin-top: 16px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+a:not(.attribution a):hover {
+  background-color: var(--Green);
+  color: var(--Gray-700);
+  cursor: pointer;
+}
+
+a:not(.attribution a):focus {
+  background-color: var(--Green);
+  color: var(--Gray-700);
+}
+
+@media (min-width: 10px) {
+  .main-container {
+    width: 384px;
+    height: 611px;
+    padding: 40px;
+  }
+
+  a {
+    width: 304px;
+  }
 }
