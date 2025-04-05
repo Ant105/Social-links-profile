@@ -126,7 +126,7 @@ a:not(.attribution a):focus {
   color: var(--Gray-700);
 }
 
-@media (min-width: 10px) {
+@media (min-width: 768px) {
   .main-container {
     width: 384px;
     height: 611px;
