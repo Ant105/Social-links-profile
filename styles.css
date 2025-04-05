@@ -22,7 +22,6 @@ body {
   line-height: 150%;
   letter-spacing: 0;
   background-color: var(--Gray-900);
-  padding-bottom: 5px;
 }
 
 * {
