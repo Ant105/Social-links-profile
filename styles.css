@@ -133,7 +133,7 @@ a:not(.attribution a):focus {
     padding: 40px;
   }
 
-  a {
+  a:not(.attribution a) {
     width: 304px;
   }
 }
