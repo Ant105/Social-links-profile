@@ -74,21 +74,21 @@ img {
 }
 
 .name {
-  font-family: Inter-SemiBold, sans-serif;
+  font-family: Inter-SemiBold;
   font-size: 24px;
   color: var(--White);
   margin-top: 30px;
 }
 
 .location {
-  font-family: Inter-Bold, sans-serif;
+  font-family: Inter-Bold;
   color: var(--Green);
   font-size: 14px;
   margin-top: 8px;
 }
 
 .skills {
-  font-family: Inter-Regular, sans-serif;
+  font-family: Inter-Regular;
   color: var(--White);
   font-size: 14px;
   margin-top: 21px;
@@ -108,7 +108,7 @@ a:not(.attribution a) {
   background-color: var(--Gray-700);
   border-radius: 8px;
   text-decoration: none;
-  font-family: Inter-Bold, sans-serif;
+  font-family: Inter-Bold;
   color: var(--White);
   font-size: 14px;
   margin-top: 16px;
