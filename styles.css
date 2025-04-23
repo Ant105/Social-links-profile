@@ -2,12 +2,12 @@
 /*Mobile First*/
 
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   color: var(--White);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%); 
+  color: hsl(228, 66%, 66%); 
 }
 
 :root {
@@ -32,20 +32,29 @@ body {
 
 @font-face {
   font-family: Inter-Regular;
-  src: url('assets/fonts/Inter-Regular.woff2') format('woff2');
+  src: url('assets/fonts/Inter-Regular.woff2') format('woff2'),
+  url('assets/fonts/Inter-Regular.woff'), format('woff');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Inter-SemiBold;
-  src: url('assets/fonts/Inter-SemiBold.woff2') format('woff2');
+  src: url('assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+  url('assets/fonts/Inter-SemiBold.woff'), format('woff');
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Inter-Bold;
-  src: url('assets/fonts/Inter-Bold.woff2') format('woff2');
+  src: url('assets/fonts/Inter-Bold.woff2') format('woff2'),
+  url('assets/fonts/Inter-Bold.woff'), format('woff');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 .main-container {
@@ -74,21 +83,23 @@ img {
 }
 
 .name {
-  font-family: Inter-SemiBold;
+  font-family: Inter-SemiBold, system-ui, 'Segoe UI';
+  font-weight: 600;
   font-size: 24px;
   color: var(--White);
   margin-top: 30px;
 }
 
 .location {
-  font-family: Inter-Bold;
+  font-family: Inter-Bold, system-ui, 'Segoe UI';
+  font-weight: 700;
   color: var(--Green);
   font-size: 14px;
   margin-top: 8px;
 }
 
 .skills {
-  font-family: Inter-Regular;
+  font-family: Inter-Regular, system-ui, 'Segoe UI';
   color: var(--White);
   font-size: 14px;
   margin-top: 21px;
@@ -108,7 +119,8 @@ a:not(.attribution a) {
   background-color: var(--Gray-700);
   border-radius: 8px;
   text-decoration: none;
-  font-family: Inter-Bold;
+  font-family: Inter-Bold, system-ui, 'Segoe UI';
+  font-weight: 700;
   color: var(--White);
   font-size: 14px;
   margin-top: 16px;
